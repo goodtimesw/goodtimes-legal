@@ -36,71 +36,98 @@
     <section id="zh-Hant" class="language-section" lang="zh-Hant">
         <h1>🌸 好時光 GoodTimes — 隱私權政策</h1>
         <p class="subtitle">Privacy Policy</p>
-        <p class="date">生效日期：2026 年 6 月 16 日</p>
+        <p class="date">最後更新：2026 年 10 月 26 日</p>
+        <p class="subtitle" data-release="3.6">本頁說明目前上架的 3.6 版。不同平台與舊版本的功能及保存範圍可能不同；未上線功能不代表已可使用。</p>
 
         <div class="highlight">
-            <strong>核心承諾：</strong>您的健康資料主要儲存在您的裝置上。您手動輸入的資料可選擇同步到個人 iCloud 帳號；從 Apple 健康匯入的來源資料不會上傳至 iCloud。若您使用伴侶分享功能，僅您選擇的有限摘要資訊會透過 Apple CloudKit 傳送。我們不會販賣您的任何個人資料。
+            <strong>資料由您掌握：</strong>好時光協助您整理健康紀錄、回顧變化，並準備與醫師討論的摘要。紀錄主要保存在裝置上；您可另外選擇 iCloud 備份、匯出檔案或伴侶分享。不同功能保存的範圍不同；伴侶摘要與您傳送的訊息會經由 Apple CloudKit 儲存及傳送。我們不販賣您的個人資料，也不將健康資料用於廣告追蹤。
         </div>
 
         <h2>一、我們蒐集什麼資料</h2>
         <p>好時光是一款經期追蹤與健康記錄 App。您輸入的資料（包括經期記錄、症狀、情緒、基礎體溫、體重、睡眠、LH / 排卵試紙、哺乳與產後記錄等）主要儲存於：</p>
         <ul>
-            <li>您的 iPhone / iPad 本機儲存空間</li>
-            <li>您的個人 iCloud 帳號（若您啟用 iCloud 同步功能）</li>
+            <li>您的裝置，包括支援的 iPhone、iPad 或 Mac</li>
+            <li>您的個人 iCloud 私有資料庫（若您啟用 App 內的 iCloud 備份，範圍見第三節）</li>
+            <li>好時光的 CloudKit 分享服務（若您使用伴侶分享或傳送訊息，範圍見第四節）</li>
         </ul>
         <p>我們不會出售您的資料，也不會將您的健康資料用於廣告追蹤。</p>
 
         <h2>二、HealthKit 資料</h2>
-        <p>好時光可選擇性地與 Apple Health（HealthKit）整合。經您明確授權後，可讀取以下類型的健康資料以帶入既有紀錄並進行週期與健康趨勢分析：</p>
+        <p>在支援的裝置上，好時光可選擇性地與 Apple 健康（HealthKit）整合。經您明確授權後，可讀取以下類型的健康資料以帶入既有紀錄並進行週期與健康趨勢分析：</p>
         <ul>
             <li>月經流量紀錄</li>
             <li>子宮頸黏液</li>
             <li>排卵試紙（LH）結果</li>
-            <li>性行為紀錄（含是否使用保護措施）</li>
+            <li>性行為紀錄與保護措施欄位；匯入前請核對預覽及來源紀錄</li>
             <li>基礎體溫（BBT）與一般體溫</li>
             <li>體重</li>
-            <li>睡眠分析與 Apple Watch 手腕溫度趨勢</li>
+            <li>相容 Apple Watch 已產生的睡眠手腕溫度資料</li>
         </ul>
-        <p>其中，當您主動選擇「同步到 Apple 健康」時，好時光會將<strong>月經流量、子宮頸黏液、排卵試紙（陰性 / 陽性）、基礎體溫、體重</strong>寫回 Apple 健康。<strong>性行為、一般體溫、睡眠、手腕溫度</strong>僅供讀取，不會寫回 Apple 健康。</p>
-        <p>所有 HealthKit 資料存取均需您明確授權，且僅用於 App 功能與健康趨勢分析。我們不會將 HealthKit 資料用於廣告或行銷目的，也不會提供給第三方。</p>
+        <p>好時光不讀取 Apple 健康的「睡眠分析」資料，也不自行測量手腕溫度。您仍可在 App 手動記錄睡眠。</p>
+        <p>取得您允許的寫入權限後，手動「同步到 Apple 健康」及編輯紀錄後的自動補寫，可寫入<strong>月經流量、子宮頸黏液、支援的排卵試紙結果（陰性／LH 陽性）、基礎體溫、體重</strong>，並刪除、重寫本 App 先前建立的相關樣本。<strong>性行為、一般體溫與手腕溫度不會寫回</strong>；並非每種資料都支援雙向傳送。整批還原、匯入或清除 App 紀錄，不代表會清除 Apple 健康的樣本。</p>
+        <p>HealthKit 存取需經授權，用於匯入、記錄整理、估計與健康趨勢分析，不用於廣告或行銷。您可在系統的健康權限設定調整允許項目。若啟用伴侶分享，您選擇的摘要可能反映匯入紀錄所產生的估計；匯出 JSON、PDF 或試算表時，也可能包含匯入的值，請確認分享範圍。</p>
 
         <h3>自動匯入（選用功能）</h3>
-        <p>好時光 3.x 版加入了 Apple 健康自動匯入，<strong>預設為關閉</strong>。當您在「設定 → Apple Health 自動匯入」開啟某個類型時：</p>
+        <p>分類資料自動匯入<strong>預設為關閉</strong>。當您在 Apple 健康自動匯入設定開啟某個類型時：</p>
         <ul>
-            <li><strong>僅在前景使用時檢查。</strong>App 開著時，好時光才會用 Apple 健康的 Anchored Query 讀取新樣本；App 進入背景即停止，沒有背景傳遞。</li>
+            <li><strong>分類資料在 App 開啟時檢查。</strong>這裡的經期、黏液與 LH 分類資料自動匯入，在 App 進入背景時停止檢查；不代表所有健康資料都沒有背景處理。</li>
             <li><strong>沒有衝突的新紀錄自動補入。</strong>若當天該欄位是空的，Apple 健康的紀錄會自動匯入並標記來源。</li>
             <li><strong>有衝突時不覆蓋。</strong>若當天已有您的紀錄且與 Apple 健康不同，新值會進入「待確認」清單，由您選擇：使用 Apple 健康 / 使用好時光 / 忽略。既有紀錄不會被自動覆蓋。</li>
             <li><strong>性行為一律預覽匯入</strong>，不會自動加入。</li>
             <li><strong>僅讀取，不回寫。</strong>自動匯入只「讀」Apple 健康，不會把資料寫回。</li>
-            <li><strong>狀態留在裝置上。</strong>所有自動匯入狀態（偏好設定、讀取進度 anchor、待確認佇列、抑制紀錄）僅儲存在您的裝置，受完整檔案保護，不會進入 iCloud 備份、App Group 或 Widget。</li>
+            <li><strong>狀態留在裝置上。</strong>這項分類資料自動匯入的狀態（偏好設定、讀取進度、待確認佇列、抑制紀錄）保存在受完整檔案保護、排除備份的裝置檔案，不納入 App 內的 iCloud 備份、App Group 或 Widget。</li>
         </ul>
+        <p><strong>數值與手腕溫度是不同的路徑：</strong>基礎體溫、一般體溫、體重及手腕溫度可在開啟 App 或手動同步時帶入。手腕溫度另有增量讀取；請勿依賴 3.6 在 App 關閉或鎖定時即時更新。實際更新受授權、資料可用性、裝置狀態與系統限制影響。本頁不把尚未發佈的背景更新修正描述為現有功能，也不代表整份健康紀錄會上傳至分享服務。</p>
 
-        <h2>三、iCloud 部分備份</h2>
-        <p>若您啟用 iCloud 同步，好時光會將以下資料儲存於您的個人 iCloud 私有資料庫，作為換機與災難恢復用途：每日紀錄（不含 Apple 健康來源欄位）、產後健康狀態設定、HRT 治療紀錄、伴侶聊天隱藏時間。iCloud 私有資料庫由 Apple 帳號保護，其他 App 無法讀取；傳輸與儲存由 Apple 加密，但本 App 目前未提供額外的應用層端對端加密。</p>
-        <p>下列項目<strong>不包含</strong>在此備份：使用者名稱、提醒設定（產後 / HRT / 通知排程）、伴侶聊天訊息快取，以及任何 Apple 健康來源欄位。您可以隨時在 App 內關閉 iCloud 同步；換機時請使用完整的 JSON 匯出備份檔保留所有資料，並在新裝置重新授權 Apple 健康再次匯入。</p>
+        <h2>三、備份、匯出與還原</h2>
+        <h3>App 內的 iCloud 備份</h3>
+        <p>這項選用功能使用您 Apple 帳號的 CloudKit 私有資料庫。先手動建立第一份備份，之後在符合條件的紀錄變更與開啟 App 時更新；它不是多台裝置逐筆即時合併的服務。</p>
+        <ul>
+            <li><strong>會備份：</strong>可備份的每日紀錄、產後健康狀態、HRT 療程、伴侶聊天隱藏時間等健康與相關設定資料。「我的句子」隨符合條件的備份一起保存；修改句子會要求更新，但仍需已有雲端基準、iCloud 可用，且有可備份的每日紀錄或用藥事件。只有句子不能單獨建立原本不符合條件的備份。</li>
+            <li><strong>不會備份：</strong>從 Apple 健康匯入的值、LH 試紙照片、使用者名稱、提醒時間、通知設定、伴侶聊天訊息快取、外觀／語言等 App 偏好與分享設定。某天 LH 含匯入來源時，該天所有 LH 紀錄都排除；體重只有確認為手動輸入才納入；去掉匯入值後為空白的每日紀錄也不納入。</li>
+            <li><strong>還原：</strong>用雲端內容整份取代這台裝置的每日紀錄與用藥事件，不會逐筆合併；這台裝置上從 Apple 健康匯入的值也會移除，需再匯入。<strong>不會刪除 Apple 健康資料庫中的原始樣本。</strong>HRT、產後狀態與聊天隱藏時間依備份取代；「我的句子」只在備份有此欄位時取代。使用者名稱、提醒、通知設定與聊天快取保留。</li>
+        </ul>
+        <p>Apple 提供雲端傳輸與儲存保護；好時光沒有另加應用層的端對端加密。關閉 App 的 iCloud 備份不等於刪除既有雲端內容，也不等於關閉 iOS／iPadOS 等系統備份。系統備份是另外一項由您與 Apple 系統設定管理的功能，可能包含符合備份條件的本機資料。</p>
+        <p>舊版本建立的備份或分享可能保留當時的欄位；更新 App 不表示所有舊雲端副本已被清理。若您希望移除既有內容，請依第九節分別操作並確認結果。</p>
+        <h3>備份檔（JSON）、PDF 與試算表</h3>
+        <p>JSON 可保存每日紀錄（含從 Apple 健康匯入的值）、用藥事件、使用者名稱、產後／HRT 與通知設定、伴侶對話本機快取等。照片僅包含<strong>匯出時讀得到、且被紀錄引用</strong>的 LH 試紙照片。不包含「我的句子」、外觀／語言偏好、健康授權、Face ID、購買／試用狀態與 iCloud 備份設定；不是所有資料的完整副本。</p>
+        <p>對話快取中的分享碼會在 JSON 裡，但匯入不會重建伴侶分享設定。匯入會整份取代目前的每日紀錄與用藥事件，不合併；檔案含聊天快取時也取代快取。其他支援的設定在檔案有值時才套用，使用者名稱非空才取代；未包含的「我的句子」不變。</p>
+        <p><strong>JSON 是未加密的明文檔案。</strong>PDF 與試算表也可能含健康紀錄。請只保存到信任的位置，傳送前先檢查內容；您選擇的檔案或郵件服務會依其政策處理收到的資料。刪除 App 無法收回已匯出的檔案或對方保存的副本。</p>
 
         <h2>四、伴侶分享功能</h2>
-        <p>好時光提供「伴侶 / 家人分享」功能，讓您可以選擇性地與另一位使用者分享部分週期資訊。此功能使用 Apple CloudKit：</p>
+        <p>您可主動產生分享碼，選擇要讓對方了解的摘要與傳送的訊息。這與個人 iCloud 備份是兩項獨立功能：</p>
         <ul>
             <li><strong>主動分享：</strong>您必須主動產生分享碼並提供給對方</li>
-            <li><strong>有限資料：</strong>僅分享您選擇的週期摘要資訊，不包含詳細症狀、情緒、體溫、性行為等私密紀錄</li>
-            <li><strong>隨時撤銷：</strong>您可以隨時停止分享或重新產生分享碼</li>
+            <li><strong>分享內容：</strong>暱稱、依開關選擇的週期階段、經期／排卵倒數、心情表情、需要關心的狀態，以及您輸入的今日訊息。3.6 依模式與設定也可能分享受孕可能性分類；這是 App 的估計，不是實際機率或避孕判斷。它不是逐筆分享整份症狀、體溫或性行為紀錄，但自由輸入的訊息可能包含您自行寫入的健康資訊。</li>
+            <li><strong>訊息與連線資料：</strong>雙方傳送的聊天文字、傳送者角色、時間、分享碼、查看者顯示名稱、最後查看時間，以及裝置／安裝識別與封鎖資料，會透過 CloudKit 處理與儲存，以提供對話、連線管理與清理功能。</li>
+            <li><strong>儲存與存取限制：</strong>目前分享服務使用好時光 CloudKit 容器的 Public Database，不是您的個人 iCloud 私有備份，也沒有另加端對端加密。正式資料庫授予一般用戶端讀取權限，<strong>並未在資料庫層級限於您指定的伴侶帳號</strong>。App 不會將內容刊登在公開網頁，但具有容器存取管道且能定位紀錄者可能讀取；開發者也可依管理權限存取這些分享資料。分享碼與 App 內封鎖不能取代資料庫的身分授權。</li>
+            <li><strong>停止與清理：</strong>您可停止分享或更換分享碼。App 會嘗試清理相關雲端資料；分享者可刪除自己建立的摘要與訊息，但<strong>對方建立的訊息或查看者紀錄可能只有建立者或管理端能刪除</strong>。權限限制不會只靠重試消失；請依清理提示確認尚存內容，必要時聯絡支援。按下停止不代表雲端已全部刪除。</li>
         </ul>
+        <p>請只將分享碼交給信任的人，不要公開貼出。分享碼不是加密金鑰。停止分享或雲端清理無法收回對方已看過、截圖或另外保存的內容。</p>
 
         <h2>五、訂閱與付款</h2>
         <p>好時光提供 App 內訂閱服務。所有交易透過 Apple 的 App Store 處理。我們不會蒐集您的信用卡或付款資訊，僅透過 StoreKit 驗證訂閱狀態。</p>
 
         <h2>六、第三方服務</h2>
         <p>好時光不使用第三方廣告追蹤 SDK，也不會將您的健康資料提供給廣告商。</p>
+        <p>Apple 依其服務條款處理 CloudKit、Apple 健康及購買等服務。您主動聯絡支援時，我們會收到您的寄件信箱及送出的內容，用於回覆與排除問題。App 的回饋信草稿可附裝置／系統／版本資訊及整理後的本機診斷摘要；請在寄出前檢查並移除不想提供的資訊。不要寄送完整健康紀錄、試紙原始照片、備份檔或分享碼。</p>
+        <p>本網站由 GitHub Pages 託管；GitHub 會為安全目的記錄訪客的 IP 位址，詳見<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages 資料說明</a>與<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隱私聲明</a>。瀏覽本網站不會自行讀取您的 App 健康紀錄。</p>
 
         <h2>七、通知</h2>
-        <p>好時光可發送本地推播通知（經期提醒、排卵提醒、BBT、每日記錄、用藥或智慧洞察提醒等）。這些通知主要在您的裝置上排程。</p>
+        <p>您允許通知並啟用相關提醒後，好時光會在裝置上排程經期、估計排卵日、基礎體溫、每日記錄或洞察等本地通知。Widget 使用裝置上的共用摘要，呈現天數、估計日期及待處理狀態。通知與 Widget 可能在主畫面、鎖定畫面或配對裝置上被旁人看見；您可在系統設定調整顯示與預覽。</p>
+        <p>相機與照片選取用於您選擇記錄的 LH 試紙照片。Face ID 由系統執行身分驗證，App 不取得您的臉部生物特徵資料。這些權限可在系統設定管理。</p>
 
         <h2>八、兒童隱私</h2>
         <p>好時光不針對 13 歲以下兒童設計。我們不會有意蒐集兒童的個人資訊。</p>
 
         <h2>九、資料刪除</h2>
-        <p>您可以刪除 App，或使用 iOS 的 App 資料管理方式移除本機資料。若您已啟用 iCloud 同步，建議先在 App 內關閉同步或確認是否需要匯出 JSON 備份，以避免之後重新安裝時再次同步舊資料。</p>
+        <ul>
+            <li><strong>裝置上的紀錄：</strong>App 的清除資料功能可清除每日紀錄、用藥事件、LH 照片與「我的句子」等對應內容；它不等於刪除所有雲端內容或 Apple 健康樣本。移除 App 不等於清除雲端備份；系統的「卸載 App」也可能保留文件與資料。</li>
+            <li><strong>個人 iCloud 備份：</strong>請在 App 的 iCloud 備份設定使用清除雲端備份功能，並確認結果。關閉備份開關不會自行刪掉舊備份；若不希望重新上傳，清除後也請檢查備份設定。</li>
+            <li><strong>伴侶摘要與聊天：</strong>請另外停止分享並確認雲端清理狀態。只刪 App、關閉備份或隱藏對話不代表遠端訊息已刪除。網路問題可重試；若顯示內容由對方建立或權限不足，請聯絡支援，不要假定重試便會刪完。完成處理前請保留 App 的清理狀態。</li>
+            <li><strong>Apple 健康與匯出檔：</strong>請分別在 Apple 健康及您存放檔案的位置管理。App 無法收回別人已保存的資料，也不會因刪 App 而清空您的健康資料庫。</li>
+        </ul>
+        <p>本機紀錄會保留到您刪除相應內容或移除其資料；雲端備份與分享內容則須分別完成清除。備份、網路或服務限制可能影響完成時間，我們不承諾所有副本即時消失。如需協助，請聯絡下方信箱，勿寄送完整健康紀錄或備份檔。</p>
 
         <h2>十、政策更新</h2>
         <p>若本政策有重大變更，我們將透過 App 更新或本頁面通知您。最新版本始終可在本頁面查閱。</p>
@@ -115,71 +142,99 @@
     <section id="en" class="language-section" lang="en">
         <h1>🌸 GoodTimes — Privacy Policy</h1>
         <p class="subtitle">隱私權政策</p>
-        <p class="date">Effective date: June 16, 2026</p>
+        <p class="date">Last updated: October 26, 2026</p>
+        <p class="subtitle" data-release="3.6">This page describes the currently released version 3.6. Features and stored content may differ on other platforms or older versions. Unreleased features are not represented as available.</p>
 
         <div class="highlight">
-            <strong>Core promise:</strong> Your health data is primarily stored on your device. Data you enter manually may optionally sync to your personal iCloud account; source data imported from Apple Health is not uploaded to iCloud. If you use partner sharing, only the limited summary information you choose to share is transmitted through Apple CloudKit. We do not sell your personal data.
+            <strong>Your data, under your control:</strong> GoodTimes helps you organise health records, review changes and prepare summaries for discussions with your clinician. Records are primarily stored on your device. iCloud backup, file exports and partner sharing are optional and preserve different information. Partner summaries and messages you send are stored and transmitted through Apple CloudKit. We do not sell your personal data or use health data for advertising tracking.
         </div>
 
         <h2>1. What Data We Collect</h2>
         <p>GoodTimes is a cycle tracking and health logging app. The data you enter, including period records, symptoms, mood, basal body temperature, weight, sleep, LH / ovulation test records, breastfeeding, and postpartum records, is primarily stored in:</p>
         <ul>
-            <li>Your iPhone / iPad local storage</li>
-            <li>Your personal iCloud account, if you enable iCloud sync</li>
+            <li>Your device, including supported iPhone, iPad or Mac models</li>
+            <li>Your personal iCloud Private Database, if you enable in-app iCloud backup (section 3)</li>
+            <li>GoodTimes' CloudKit sharing service, if you use partner sharing or messaging (section 4)</li>
         </ul>
         <p>We do not sell your data or use your health data for advertising tracking.</p>
 
         <h2>2. HealthKit Data</h2>
-        <p>GoodTimes may optionally integrate with Apple Health (HealthKit). With your explicit permission, it can read the following types of health data to bring in your existing records and support cycle and health trend analysis:</p>
+        <p>On supported devices, GoodTimes may optionally integrate with Apple Health (HealthKit). With your explicit permission, it can read the following types of health data to bring in your existing records and support cycle and health trend analysis:</p>
         <ul>
             <li>Menstrual flow records</li>
             <li>Cervical mucus</li>
             <li>Ovulation test (LH) results</li>
-            <li>Sexual activity records (including whether protection was used)</li>
+            <li>Sexual activity records and protection fields; check the preview against the source before importing</li>
             <li>Basal body temperature (BBT) and body temperature</li>
             <li>Weight</li>
-            <li>Sleep analysis and Apple Watch wrist temperature trends</li>
+            <li>Sleeping wrist temperature data already generated by a compatible Apple Watch</li>
         </ul>
-        <p>When you actively choose "Sync to Apple Health," GoodTimes writes <strong>menstrual flow, cervical mucus, ovulation tests (negative / positive), basal body temperature, and weight</strong> back to Apple Health. <strong>Sexual activity, body temperature, sleep, and wrist temperature</strong> are read-only and are never written back to Apple Health.</p>
-        <p>HealthKit access requires your explicit permission and is used only for app functionality and health trend analysis. We do not use HealthKit data for advertising or marketing, and we do not share it with third parties.</p>
+        <p>GoodTimes does not read Apple Health's sleep-analysis data or measure wrist temperature itself. You can still record sleep manually in the app.</p>
+        <p>With the write permissions you allow, manual Sync to Apple Health and automatic rewrites after record edits may write <strong>menstrual flow, cervical mucus, supported ovulation test results (negative / LH positive), basal body temperature and weight</strong>, including deleting and rewriting related samples previously created by this app. <strong>Sexual activity, general body temperature and wrist temperature are not written back.</strong> Not every type supports two-way transfer. Replacing, restoring or clearing app records does not mean Apple Health samples are cleared.</p>
+        <p>HealthKit access requires permission and supports import, record organisation, estimates and health trend analysis, not advertising or marketing. Manage allowed types in the system's health permissions. If you enable partner sharing, selected summaries may reflect estimates derived from imported records. JSON, PDF and spreadsheet exports may also include imported values; check what you choose to share.</p>
 
         <h3>Auto-import (optional)</h3>
-        <p>GoodTimes 3.x adds optional Apple Health auto-import, which is <strong>OFF by default</strong>. When you turn on a type under <strong>Settings → Apple Health Auto-Import</strong>:</p>
+        <p>Category auto-import is <strong>OFF by default</strong>. When you enable a type in Apple Health auto-import settings:</p>
         <ul>
-            <li><strong>Foreground-only checks.</strong> GoodTimes uses Apple Health's Anchored Query to read new samples only while the app is open; it stops when the app moves to the background — there is no background delivery.</li>
+            <li><strong>Category checks while the app is open.</strong> This period, mucus and LH category auto-import stops checking in the background. That does not mean all health-data processing is foreground-only.</li>
             <li><strong>Conflict-free records are added automatically.</strong> If a field for a given day is empty, Apple Health's value is imported and tagged with its source.</li>
             <li><strong>Conflicts never overwrite.</strong> If a day already has your record and it differs from Apple Health, the new value goes into a <strong>pending review</strong> list where you choose: Use Apple Health / Use GoodTimes / Ignore. Existing records are never overwritten automatically.</li>
             <li><strong>Sexual activity is always reviewed</strong> through the preview flow, never auto-imported.</li>
             <li><strong>Read-only.</strong> Auto-import only reads from Apple Health; it never writes back.</li>
-            <li><strong>State stays on the device.</strong> All auto-import state (preferences, read-progress anchor, review queue, suppressions) is stored only on your device under complete file protection, and never enters iCloud backup, App Group defaults, or widget snapshots.</li>
+            <li><strong>State stays on the device.</strong> This category auto-import's preferences, read progress, review queue and suppressions are stored in protected, backup-excluded device files, not in in-app iCloud backup, App Group data or widgets.</li>
         </ul>
 
-        <h2>3. iCloud Partial Backup</h2>
-        <p>If you enable iCloud sync, GoodTimes stores the following data in your personal iCloud Private Database as a switch-device and disaster-recovery safety net: daily records (excluding Apple Health sourced fields), postpartum health-state settings, HRT treatment episodes, and partner conversation hidden timestamps. iCloud Private Databases are protected by your Apple account and cannot be read by other apps. Apple encrypts data in transit and at rest, but GoodTimes currently does not provide additional app-level end-to-end encryption.</p>
-        <p>The following items are <strong>not included</strong> in this backup: user name, reminder settings (postpartum / HRT / notification schedules), partner conversation message cache, and any Apple Health sourced fields. You can turn off iCloud sync in the app at any time. When switching devices, use a full JSON backup export to preserve everything, then reconnect Apple Health on the new device to import again.</p>
+        <p><strong>Numeric and wrist-temperature imports are separate.</strong> Basal body temperature, general body temperature, weight and wrist temperature can be imported when you open the app or sync manually. Wrist temperature also uses incremental reads. Do not rely on version 3.6 to update immediately while the app is closed or the device is locked. Updates depend on permission, available data, device state and system limitations. This page does not present unreleased background-update fixes as existing features, or imply that your entire health log is uploaded to the sharing service.</p>
+
+        <h2>3. Backup, Export and Restore</h2>
+        <h3>In-app iCloud backup</h3>
+        <p>This optional feature uses your Apple account's CloudKit Private Database. Create the first backup manually; eligible record changes and app openings can then update it. It is not a live, record-by-record merge across devices.</p>
+        <ul>
+            <li><strong>Included:</strong> Eligible daily records, postpartum health state, HRT episodes, partner-chat hidden timestamps and related supported health/settings data. My Phrases accompanies eligible uploads. Editing phrases requests an update, but uploading still requires an established cloud baseline, available iCloud and eligible daily records or medication events. Phrases alone do not make an otherwise ineligible device able to upload.</li>
+            <li><strong>Excluded:</strong> Values imported from Apple Health, LH test photos, user name, reminder times, notification settings, cached partner-chat messages, appearance/language preferences and sharing settings. If a day's LH contains an imported source, all LH records for that day are excluded. Only weight known to be entered manually is included. Days left empty after removing imported values are omitted.</li>
+            <li><strong>Restoring:</strong> Replaces this device's daily records and medication events as a whole, without merging, including removal of imported Apple Health values on this device. Import those values again afterward. <strong>It does not delete original samples in the Apple Health database.</strong> HRT, postpartum state and chat hidden timestamps are replaced from the backup. My Phrases is replaced only when that field exists. User name, reminders, notification settings and chat cache are retained.</li>
+        </ul>
+        <p>Apple provides cloud transmission and storage protection; GoodTimes adds no app-level end-to-end encryption. Turning off in-app iCloud backup does not delete existing cloud content or turn off iOS/iPadOS and other system backups. System backup is separate, managed through your Apple system settings, and may include eligible local app data.</p>
+        <p>Backups or shares created by older versions may retain the fields saved at that time. Updating the app does not mean all older cloud copies have been cleaned up. To remove existing content, follow the separate steps in section 9 and check their results.</p>
+        <h3>JSON backups, PDFs and spreadsheets</h3>
+        <p>JSON can preserve daily records (including imported Apple Health values), medication events, user name, postpartum/HRT and notification settings, and the local partner-conversation cache. LH photos are included only if <strong>referenced by a record and readable at export</strong>. My Phrases, appearance/language preferences, health permissions, Face ID, purchase/trial status and iCloud backup settings are excluded. It is not a complete copy of everything.</p>
+        <p>Conversation-cache sharing codes remain in the JSON, but importing does not restore partner-sharing settings. Import replaces current daily records and medication events rather than merging them; it also replaces chat cache when that field is present. Other supported settings are applied only when present, and a nonempty user name replaces the current name. Excluded My Phrases remains unchanged.</p>
+        <p><strong>JSON files are unencrypted plain text.</strong> PDFs and spreadsheets may also contain health records. Save them only somewhere you trust and review their contents before sending them. File or email services you choose handle received data under their own policies. Deleting the app cannot recall exported files or copies saved by someone else.</p>
 
         <h2>4. Partner Sharing</h2>
-        <p>GoodTimes provides an optional partner / family sharing feature that lets you share selected cycle summary information with another user through Apple CloudKit:</p>
+        <p>You can generate a sharing code, select summaries and send messages to another user. This is separate from your personal iCloud backup:</p>
         <ul>
             <li><strong>Opt-in sharing:</strong> You must actively generate and share a code.</li>
-            <li><strong>Limited information:</strong> Only selected summary information is shared. Detailed symptoms, mood, temperature, sexual activity, and other private logs are not shared.</li>
-            <li><strong>Revocable:</strong> You can stop sharing or regenerate your sharing code at any time.</li>
+            <li><strong>Shared content:</strong> Your nickname; cycle phase, period/ovulation countdowns and mood emoji according to your switches; a request-for-comfort status; and your typed message for today. Depending on mode and settings, version 3.6 may also share a conception-likelihood category. This is an app estimate, not an actual probability or contraceptive assessment. This is not a record-by-record transfer of your full symptom, temperature or sexual-activity log, but text you type can include health information you choose to disclose.</li>
+            <li><strong>Messages and connection data:</strong> Chat text sent by either person, sender roles, timestamps, sharing codes, viewer display names and last-viewed times, device/installation identifiers and blocking data are processed and stored through CloudKit for messaging, connection management and cleanup.</li>
+            <li><strong>Storage and access limits:</strong> The current sharing service uses the Public Database in GoodTimes' CloudKit container, not your personal iCloud Private Database, with no added end-to-end encryption. Its production configuration grants general client read access; <strong>database access is not restricted to your chosen partner's account</strong>. The app does not publish this content on a public webpage, but clients with container access that can locate records may read it. The developer can also access sharing data through administrative permissions. A sharing code and in-app blocking do not replace database-level identity authorisation.</li>
+            <li><strong>Stopping and cleanup:</strong> You can stop sharing or change the code. The app attempts cloud cleanup. Sharers can delete summaries and messages they created, but <strong>messages or viewer records created by the other person may require their creator or an administrator to delete them</strong>. Retrying alone does not remove a permission restriction. Check the cleanup notice and contact support if needed. Pressing Stop does not mean all cloud data has been deleted.</li>
         </ul>
+        <p>Give sharing codes only to people you trust; do not post them publicly. A code is not an encryption key. Stopping sharing or cleaning cloud records cannot recall content someone has already viewed, captured or saved elsewhere.</p>
 
         <h2>5. Subscriptions and Payments</h2>
         <p>GoodTimes offers in-app subscriptions. All purchases are processed by Apple through the App Store. We do not collect your credit card or payment information and only use StoreKit to verify subscription status.</p>
 
         <h2>6. Third-Party Services</h2>
         <p>GoodTimes does not use third-party advertising tracking SDKs and does not provide your health data to advertisers.</p>
+        <p>Apple handles CloudKit, Apple Health and purchases under its service terms. When you contact support, we receive your sender email address and submitted content to respond and troubleshoot. The app's feedback email draft may include device, system and version information and a processed local diagnostics summary. Review it before sending and remove anything you do not wish to provide. Do not send full health logs, original test photos, backup files or sharing codes.</p>
+        <p>This website is hosted on GitHub Pages. GitHub logs visitors' IP addresses for security purposes; see <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages data collection</a> and the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. Visiting this website does not itself read your app's health records.</p>
 
         <h2>7. Notifications</h2>
-        <p>GoodTimes may send local notifications, such as period reminders, ovulation reminders, BBT reminders, daily log reminders, medication reminders, or insight reminders. These notifications are primarily scheduled on your device.</p>
+        <p>When you allow notifications and enable reminders, GoodTimes schedules local period, estimated-ovulation, basal-temperature, daily-log or insight reminders. Widgets use a shared on-device summary for day counts, estimated dates and pending status. Notifications and widgets may be visible to others on home screens, lock screens or paired devices. Manage display and previews in system settings.</p>
+        <p>The camera and photo picker support LH test photos you choose to record. Face ID authentication is performed by the system; the app does not receive your facial biometric data. Manage these permissions in system settings.</p>
 
         <h2>8. Children’s Privacy</h2>
         <p>GoodTimes is not directed to children under 13. We do not knowingly collect personal information from children.</p>
 
         <h2>9. Data Deletion</h2>
-        <p>You can delete the app or use iOS app data management options to remove local data. If iCloud sync is enabled, we recommend turning off sync in the app or exporting a JSON backup first if you may need to keep a copy, so that old data does not sync back to the app if you reinstall it.</p>
+        <ul>
+            <li><strong>On-device records:</strong> In-app data clearing removes corresponding daily records, medication events, LH photos and My Phrases. It is not deletion of all cloud content or Apple Health samples. Removing the app does not clear cloud backups; the system's Offload App option may retain documents and data.</li>
+            <li><strong>Personal iCloud backup:</strong> Use the clear-cloud-backup action in the app's iCloud backup settings and check its result. Turning the backup switch off does not delete old backups. If you do not want further uploads, also check backup settings after clearing.</li>
+            <li><strong>Partner summaries and chat:</strong> Stop sharing separately and check cloud-cleanup status. Deleting the app, turning off backup or hiding a conversation does not mean remote messages were deleted. Retry network failures; if records belong to the other person or permission is denied, contact support rather than assuming retries will finish deletion. Retain the app's cleanup state until this is resolved.</li>
+            <li><strong>Apple Health and exports:</strong> Manage them separately in Apple Health and wherever you saved files. The app cannot recall copies saved by others, and deleting it does not empty your health database.</li>
+        </ul>
+        <p>Local records remain until you delete the corresponding content or remove its data. Cloud backups and sharing content require their respective cleanup operations. Backup, network or service limitations can affect completion; we do not promise every copy disappears immediately. For assistance, use the email below without sending full health records or backup files.</p>
 
         <h2>10. Policy Updates</h2>
         <p>If this policy changes materially, we will notify you through an app update or this page. The latest version is always available here.</p>
@@ -194,71 +249,99 @@
     <section id="ja" class="language-section" lang="ja">
         <h1>🌸 GoodTimes（グッドタイムス）— プライバシーポリシー</h1>
         <p class="subtitle">Privacy Policy</p>
-        <p class="date">発効日：2026年6月16日</p>
+        <p class="date">最終更新日：2026年10月26日</p>
+        <p class="subtitle" data-release="3.6">本ページは現在公開中の3.6版について説明します。対応端末や旧版によって機能・保存対象が異なる場合があり、未公開の機能を利用可能とは記載しません。</p>
 
         <div class="highlight">
-            <strong>基本のお約束：</strong>あなたの健康データは主にお使いの端末に保存されます。手動で入力したデータは、任意で個人の iCloud アカウントに同期できます。Apple ヘルスケアから取り込んだ元データが iCloud にアップロードされることはありません。パートナー共有を利用する場合も、あなたが共有を選んだ限られた要約情報のみが Apple CloudKit を通じて送信されます。当方があなたの個人データを販売することはありません。
+            <strong>データは自分で管理：</strong>GoodTimesは健康記録を整理し、変化を振り返り、医師との相談用サマリーを準備するためのアプリです。記録は主に端末内に保存されます。iCloudバックアップ、ファイルの書き出し、パートナー共有は任意で、それぞれ保存対象が異なります。共有サマリーと送信したメッセージはApple CloudKitで保存・送信されます。個人データを販売せず、健康データを広告トラッキングに利用しません。
         </div>
 
         <h2>1. 収集するデータ</h2>
         <p>GoodTimes は生理周期の記録と健康ログのためのアプリです。あなたが入力したデータ（生理の記録、症状、気分、基礎体温、体重、睡眠、LH／排卵検査薬の記録、授乳・産後の記録などを含む）は、主に以下に保存されます：</p>
         <ul>
-            <li>お使いの iPhone／iPad のローカルストレージ</li>
-            <li>個人の iCloud アカウント（iCloud 同期を有効にした場合）</li>
+            <li>対応するiPhone、iPad、Macなど、お使いの端末</li>
+            <li>アプリ内のiCloudバックアップを有効にした場合、個人のiCloudプライベートデータベース（第3節）</li>
+            <li>パートナー共有やメッセージを利用する場合、GoodTimesのCloudKit共有サービス（第4節）</li>
         </ul>
         <p>当方はあなたのデータを販売せず、健康データを広告トラッキングに利用することもありません。</p>
 
         <h2>2. HealthKit のデータ</h2>
-        <p>GoodTimes は任意で Apple ヘルスケア（HealthKit）と連携できます。あなたの明示的な許可のもと、既存の記録を取り込み、周期や健康トレンドの分析を行うために、以下の種類の健康データを読み取れます：</p>
+        <p>対応端末では、任意でAppleヘルスケア（HealthKit）と連携できます。明示的な許可のもと、既存の記録の取り込みや周期・健康傾向の分析のため、以下の種類を読み取れます：</p>
         <ul>
             <li>月経量の記録</li>
             <li>頸管粘液</li>
             <li>排卵検査薬（LH）の結果</li>
-            <li>性行為の記録（避妊の有無を含む）</li>
+            <li>性行為の記録と避妊方法の有無の項目。取り込む前にプレビューと元の記録をご確認ください</li>
             <li>基礎体温（BBT）および一般の体温</li>
             <li>体重</li>
-            <li>睡眠分析および Apple Watch の手首皮膚温トレンド</li>
+            <li>対応するApple Watchがすでに生成した睡眠中の手首皮膚温データ</li>
         </ul>
-        <p>このうち、あなたが「Apple ヘルスケアに同期」を自分で選んだ場合、GoodTimes は<strong>月経量・頸管粘液・排卵検査薬（陰性／陽性）・基礎体温・体重</strong>を Apple ヘルスケアに書き戻します。<strong>性行為・一般の体温・睡眠・手首皮膚温</strong>は読み取り専用で、Apple ヘルスケアへ書き戻されることはありません。</p>
-        <p>HealthKit へのアクセスはすべてあなたの明示的な許可を必要とし、アプリの機能と健康トレンドの分析にのみ使用します。当方が HealthKit のデータを広告やマーケティングに利用したり、第三者に提供したりすることはありません。</p>
+        <p>GoodTimesはAppleヘルスケアの睡眠分析データを読み取らず、自ら手首皮膚温を測定することもありません。睡眠はアプリ内に手動で記録できます。</p>
+        <p>許可された書き込み項目について、手動の「Appleヘルスケアに同期」や記録編集後の自動再書き込みで、<strong>月経量、頸管粘液、対応する排卵検査結果（陰性／LH陽性）、基礎体温、体重</strong>を保存し、本アプリが作成した関連サンプルを削除・再書き込みすることがあります。<strong>性行為、一般の体温、手首皮膚温は書き戻しません。</strong>すべての項目が双方向に対応するわけではありません。アプリの記録を一括置換・復元・消去しても、Appleヘルスケアのサンプルを消去するという意味ではありません。</p>
+        <p>HealthKitへのアクセスには許可が必要で、取り込み、記録整理、推定、健康傾向の分析に使用し、広告やマーケティングには使用しません。許可項目はシステムのヘルスケア設定で管理できます。パートナー共有を有効にすると、選択したサマリーに取り込み記録に基づく推定が反映される場合があります。JSON・PDF・表計算用ファイルにも取り込んだ値が含まれることがあるため、共有範囲をご確認ください。</p>
 
         <h3>自動取り込み（任意機能）</h3>
-        <p>GoodTimes 3.x では Apple ヘルスケアの自動取り込みを追加しましたが、<strong>初期設定はオフ</strong>です。「設定 → Apple ヘルスケア自動取り込み」で特定の種類をオンにすると：</p>
+        <p>カテゴリーデータの自動取り込みは<strong>初期設定でオフ</strong>です。Appleヘルスケア自動取り込みの設定で項目を有効にすると：</p>
         <ul>
-            <li><strong>フォアグラウンド使用時のみチェック。</strong>アプリが開いているときだけ、GoodTimes は Apple ヘルスケアの Anchored Query で新しいサンプルを読み取ります。アプリがバックグラウンドに移ると停止し、バックグラウンド配信は行いません。</li>
+            <li><strong>カテゴリーデータはアプリを開いているときに確認。</strong>ここでいう生理・粘液・LHの自動取り込みは、バックグラウンドでは確認を停止します。すべての健康データにバックグラウンド処理がないという意味ではありません。</li>
             <li><strong>競合のない新しい記録は自動で補完。</strong>その日の該当項目が空であれば、Apple ヘルスケアの記録が自動的に取り込まれ、データ元が記録されます。</li>
             <li><strong>競合がある場合は上書きしません。</strong>その日にすでにあなたの記録があり、Apple ヘルスケアと異なる場合、新しい値は「要確認」リストに入り、あなたが選びます：Apple ヘルスケアの記録を使う／GoodTimes の記録を使う／無視。既存の記録が自動で上書きされることはありません。</li>
             <li><strong>性行為は常にプレビューで確認</strong>し、自動では追加しません。</li>
             <li><strong>読み取りのみ、書き戻しなし。</strong>自動取り込みは Apple ヘルスケアを「読む」だけで、データを書き戻すことはありません。</li>
-            <li><strong>状態は端末内に保存。</strong>自動取り込みのすべての状態（設定、読み取り進捗の anchor、要確認キュー、抑制した記録）は、完全なファイル保護のもとお使いの端末にのみ保存され、iCloud バックアップ・App Group・ウィジェットに入ることはありません。</li>
+            <li><strong>状態は端末内に保存。</strong>このカテゴリーデータの自動取り込み設定、読み取り進捗、要確認キュー、抑制した記録は、完全なファイル保護を適用しバックアップ対象外とした端末内ファイルに保存します。アプリ内iCloudバックアップ、App Group、ウィジェットには含めません。</li>
         </ul>
 
-        <h2>3. iCloud への部分バックアップ</h2>
-        <p>iCloud 同期を有効にした場合、GoodTimes は機種変更や災害復旧のために、以下のデータを個人の iCloud プライベートデータベースに保存します：日々の記録（Apple ヘルスケア由来の項目を除く）、産後の健康状態の設定、HRT 治療の記録、パートナーチャットの非表示時刻。iCloud プライベートデータベースはあなたの Apple アカウントで保護され、ほかのアプリからは読み取れません。通信時・保存時のデータは Apple によって暗号化されますが、本アプリは現時点でアプリ層の追加のエンドツーエンド暗号化は提供していません。</p>
-        <p>以下の項目はこのバックアップに<strong>含まれません</strong>：ユーザー名、リマインダー設定（産後／HRT／通知スケジュール）、パートナーチャットのメッセージキャッシュ、および Apple ヘルスケア由来のすべての項目。iCloud 同期はアプリ内でいつでもオフにできます。機種変更の際は、完全な JSON エクスポートのバックアップファイルですべてのデータを保存し、新しい端末で Apple ヘルスケアを再度許可してもう一度取り込んでください。</p>
+        <p><strong>数値・手首皮膚温の取り込みは別の経路です。</strong>基礎体温、一般の体温、体重、手首皮膚温は、アプリを開いたときや手動同期で取り込めます。手首皮膚温には差分読み取りもあります。3.6版でアプリを閉じた状態や端末のロック中に即時更新されることを前提にしないでください。許可、利用可能なデータ、端末状態、システムの制約に左右されます。未公開のバックグラウンド更新修正を現行機能とは記載せず、健康記録全体を共有サービスへ送信するという意味でもありません。</p>
+
+        <h2>3. バックアップ・書き出し・復元</h2>
+        <h3>アプリ内のiCloudバックアップ</h3>
+        <p>任意の機能で、Apple AccountのCloudKitプライベートデータベースを使用します。最初に手動でバックアップを作成し、その後は条件を満たす記録変更やアプリを開いたときに更新します。複数端末の記録を1件ずつリアルタイムで統合する機能ではありません。</p>
+        <ul>
+            <li><strong>含むもの：</strong>対象となる日々の記録、産後の健康状態、HRT療程、パートナーチャットの非表示時刻など、対応する健康・設定情報。「マイフレーズ」は対象となるアップロードに含まれます。編集すると更新を要求しますが、既存のクラウド基準、利用可能なiCloud、対象の日々の記録または服薬イベントが必要です。フレーズだけで、対象外の端末がアップロード可能になるわけではありません。</li>
+            <li><strong>含まないもの：</strong>Appleヘルスケアから取り込んだ値、LH検査写真、ユーザー名、通知時刻と設定、パートナーチャットのキャッシュ、外観・言語などの設定と共有設定。その日のLHに取り込みデータがある場合、その日のLHはすべて対象外です。体重は手動入力と確認できるものだけを含み、取り込み値を除いて空になる日も対象外です。</li>
+            <li><strong>復元：</strong>この端末の日々の記録と服薬イベントを一括で置き換え、統合しません。端末上のAppleヘルスケアから取り込んだ値も除かれるため、再度取り込んでください。<strong>Appleヘルスケア内の元のサンプルは削除しません。</strong>HRT、産後の状態、チャット非表示時刻はバックアップに従って置換します。「マイフレーズ」はその項目がある場合のみ置換します。ユーザー名、通知時刻・設定、チャットキャッシュは保持します。</li>
+        </ul>
+        <p>Appleがクラウドの通信・保存を保護しますが、GoodTimes独自のエンドツーエンド暗号化はありません。アプリ内のiCloudバックアップをオフにしても、既存のクラウド内容は消えず、iOS・iPadOSなどのシステムバックアップもオフになりません。システムバックアップは別の機能で、Appleのシステム設定から管理され、対象となる端末内データを含む場合があります。</p>
+        <p>旧版で作成したバックアップや共有には、当時の項目が残る場合があります。アプリを更新するだけですべての古いクラウドコピーが削除されるわけではありません。既存内容を消去する場合は、第9節の操作を個別に行い、結果を確認してください。</p>
+        <h3>JSONバックアップ・PDF・表計算用ファイル</h3>
+        <p>JSONには日々の記録（Appleヘルスケアから取り込んだ値を含む）、服薬イベント、ユーザー名、産後・HRT・通知設定、パートナー対話の端末内キャッシュなどを保存できます。LH写真は<strong>記録が参照し、書き出し時に読み取れるもの</strong>に限ります。「マイフレーズ」、外観・言語設定、健康の許可、Face ID、購入・試用状態、iCloudバックアップ設定は含まず、すべての情報の完全なコピーではありません。</p>
+        <p>対話キャッシュの共有コードはJSONに残りますが、取り込んでもパートナー共有設定は復元しません。日々の記録と服薬イベントは統合せず一括で置き換え、チャットキャッシュの項目があればそれも置換します。その他の対応設定は値があるときだけ適用し、ユーザー名は空でない場合のみ置換します。含まれない「マイフレーズ」は変更しません。</p>
+        <p><strong>JSONは暗号化されていない平文ファイルです。</strong>PDFや表計算用ファイルにも健康記録が含まれる場合があります。信頼できる場所に保存し、送信前に内容を確認してください。選んだファイル・メールサービスは、それぞれの方針で受信したデータを扱います。アプリを削除しても、書き出したファイルや相手が保存したコピーは回収できません。</p>
 
         <h2>4. パートナー共有</h2>
-        <p>GoodTimes には「パートナー／家族と共有」機能があり、周期情報の一部を別のユーザーに任意で共有できます。この機能は Apple CloudKit を使用します：</p>
+        <p>自分で共有コードを発行し、相手に見せるサマリーを選択してメッセージを送れます。個人のiCloudバックアップとは別の機能です：</p>
         <ul>
             <li><strong>能動的な共有：</strong>あなたが自分で共有コードを発行し、相手に渡す必要があります。</li>
-            <li><strong>限られたデータ：</strong>あなたが選んだ周期の要約情報のみを共有し、詳しい症状・気分・体温・性行為などのプライベートな記録は含みません。</li>
-            <li><strong>いつでも取り消し：</strong>共有の停止や共有コードの再発行はいつでもできます。</li>
+            <li><strong>共有内容：</strong>ニックネーム、スイッチで選ぶ周期段階・生理や排卵までの日数・気分の絵文字、気遣いを求める状態、入力した今日のメッセージ。3.6版ではモード・設定に応じて妊娠可能性の分類も共有する場合があります。これはアプリの推定で、実際の確率や避妊の判定ではありません。症状・体温・性行為の全記録を1件ずつ共有するものではありませんが、自由入力には自分で記載した健康情報が含まれる場合があります。</li>
+            <li><strong>メッセージと接続情報：</strong>双方のチャット本文、送信者の役割、時刻、共有コード、閲覧者の表示名・最終閲覧時刻、端末・インストール識別子、ブロック情報を、対話、接続管理、削除のためにCloudKitで処理・保存します。</li>
+            <li><strong>保存・アクセスの制限：</strong>現在の共有サービスはGoodTimesのCloudKitコンテナのPublic Databaseを使い、個人のiCloudプライベートバックアップではなく、独自のエンドツーエンド暗号化もありません。本番の設定は一般クライアントに読み取りを許可し、<strong>データベース上で指定した相手のアカウントだけに制限していません</strong>。公開ウェブページには投稿しませんが、コンテナにアクセスでき、記録を特定できるクライアントは読み取れる可能性があり、開発者も管理権限で共有データにアクセスできます。共有コードやアプリ内ブロックはデータベースの本人認証・権限制御の代わりにはなりません。</li>
+            <li><strong>停止と削除：</strong>共有停止やコード変更ができます。アプリは関連するクラウド内容の削除を試みますが、共有者が消せるのは自分が作成したサマリーやメッセージで、<strong>相手が作成したメッセージや閲覧者記録は、作成者または管理者による削除が必要な場合があります</strong>。権限制限は再試行だけでは解消しません。削除状況を確認し、必要に応じてサポートへご連絡ください。停止ボタンを押すだけですべてのクラウド内容が削除されるわけではありません。</li>
         </ul>
+        <p>共有コードは信頼できる相手だけに伝え、公開しないでください。コードは暗号化キーではありません。共有停止やクラウドの削除で、相手が閲覧・撮影・別途保存した内容を回収することはできません。</p>
 
         <h2>5. サブスクリプションと支払い</h2>
         <p>GoodTimes はアプリ内サブスクリプションを提供しています。すべての取引は Apple の App Store を通じて処理されます。当方があなたのクレジットカードや支払い情報を収集することはなく、StoreKit を通じてサブスクリプションの状態を確認するのみです。</p>
 
         <h2>6. 第三者サービス</h2>
         <p>GoodTimes は第三者の広告トラッキング SDK を使用せず、あなたの健康データを広告主に提供することもありません。</p>
+        <p>CloudKit、Appleヘルスケア、購入などはAppleのサービス条件に従って処理されます。サポートに連絡すると、返信・問題解決のために送信元メールアドレスと送信内容を受け取ります。アプリの意見送信メールの下書きには、端末・OS・バージョン情報と整理した端末内診断の概要が含まれる場合があります。送信前に確認し、提供したくない情報は取り除いてください。健康記録全体、検査の元写真、バックアップファイル、共有コードは送らないでください。</p>
+        <p>本サイトはGitHub Pagesでホストされ、GitHubは安全のため訪問者のIPアドレスを記録します。<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pagesのデータ収集説明</a>と<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubプライバシーステートメント</a>をご確認ください。本サイトを閲覧するだけでアプリの健康記録を読み取ることはありません。</p>
 
         <h2>7. 通知</h2>
-        <p>GoodTimes はローカル通知（生理リマインダー、排卵リマインダー、BBT、毎日の記録、服薬やスマートインサイトのリマインダーなど）を送信することがあります。これらの通知は主にお使いの端末上でスケジュールされます。</p>
+        <p>通知を許可して各リマインダーを有効にすると、端末上で生理、推定排卵日、基礎体温、毎日の記録やインサイトなどのローカル通知を設定します。ウィジェットは端末内の共有サマリーから日数、推定日、処理待ち状態を表示します。通知やウィジェットはホーム画面・ロック画面・ペアリングした端末で他人に見られることがあるため、表示とプレビューはシステム設定で管理してください。</p>
+        <p>カメラと写真選択は、記録するLH検査写真に使います。Face IDの認証はシステムが行い、アプリは顔の生体情報を受け取りません。各許可はシステム設定で管理できます。</p>
 
         <h2>8. 子どものプライバシー</h2>
         <p>GoodTimes は 13 歳未満の子どもを対象としていません。当方が子どもの個人情報を意図的に収集することはありません。</p>
 
         <h2>9. データの削除</h2>
-        <p>アプリを削除するか、iOS のアプリデータ管理機能を使ってローカルデータを削除できます。iCloud 同期を有効にしている場合は、再インストール時に古いデータが再び同期されるのを避けるため、先にアプリ内で同期をオフにするか、必要に応じて JSON バックアップをエクスポートしておくことをおすすめします。</p>
+        <ul>
+            <li><strong>端末内の記録：</strong>アプリのデータ消去は日々の記録、服薬イベント、LH写真、「マイフレーズ」など対応する内容を消去します。すべてのクラウド内容やAppleヘルスケアのサンプルを消す操作ではありません。アプリ削除でクラウドのバックアップは消えず、システムの「Appを取り除く」は書類やデータを保持する場合があります。</li>
+            <li><strong>個人のiCloudバックアップ：</strong>アプリのiCloudバックアップ設定でクラウドのバックアップ消去を行い、結果を確認してください。スイッチをオフにするだけでは古いバックアップは消えません。再アップロードを望まない場合は消去後も設定を確認してください。</li>
+            <li><strong>パートナーのサマリーとチャット：</strong>別途共有を停止し、クラウドの削除状態を確認してください。アプリ削除、バックアップ停止、対話の非表示だけでは遠隔のメッセージは削除されません。通信の失敗は再試行できますが、相手が作成した内容や権限不足が表示される場合は、再試行で消せると判断せずサポートへご連絡ください。解決するまでアプリの削除状況を保持してください。</li>
+            <li><strong>Appleヘルスケアと書き出しファイル：</strong>Appleヘルスケアとファイル保存先で別々に管理してください。他人が保存したコピーは回収できず、アプリ削除で健康データベース全体が消えることもありません。</li>
+        </ul>
+        <p>端末の記録は対応する内容またはそのデータを削除するまで保持されます。クラウドのバックアップと共有内容は各消去操作の完了が必要です。バックアップ、通信、サービスの制約で完了まで時間がかかる場合があり、すべてのコピーの即時消去は保証しません。ご相談は下記メールへ、健康記録全体やバックアップファイルを送らずにお問い合わせください。</p>
 
         <h2>10. ポリシーの更新</h2>
         <p>本ポリシーに重要な変更がある場合、アプリの更新または本ページを通じてお知らせします。最新版は常に本ページでご確認いただけます。</p>
